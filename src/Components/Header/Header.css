@@ -1,0 +1,42 @@
+.world{
+    font-size: 16px;
+    width: 80%;
+    margin:auto;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.darkmode {
+    color: white;
+    background-color: black;
+}
+
+header{
+    background-color: white;
+}
+
+.world button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+.whiteMode:hover{
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+}
+
+.whiteMode {
+    background-color: black;
+    color: white;
+}
+.btnDark:hover{
+    background-color: rgba(255, 255, 255, 0.7);
+    color: black;
+}
+
+.btnDark {
+    background-color: white;
+    color: black;
+}

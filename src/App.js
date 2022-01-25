@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect } from "react";
+import Home from './Containers/Home/Home'
+import Header from "./Components/Header/Header";
+import {Routes, Route} from 'react-router-dom'
+import Pays from "./Containers/Pays/Pays";
+import DarkModeContextProvider from "./Context/DarkModeContext";
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <DarkModeContextProvider>
+      <Header />
+      <Routes>
+        <Route path='/' element={<Home />}/>
+        <Route path='/country/:name' element={<Pays/>}/>
+      </Routes>
+    </DarkModeContextProvider>
   );
 }
 

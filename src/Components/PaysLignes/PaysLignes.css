@@ -1,0 +1,57 @@
+.paysSolo-container{
+    background-color: white;
+    width: 250px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+    height: 330px;
+    margin: 20px 0;
+    overflow: hidden;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.paysSolo-container-darkMode{
+    background-color: black;
+    color: white;
+    width: 250px;
+    box-shadow: rgba(100, 100, 100, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+    height: 330px;
+    margin: 20px 0;
+    overflow: hidden;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.paysSolo-container:hover, .paysSolo-container-darkMode:hover{
+    transform: scale(1.05);
+}
+
+.img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 45%;
+    width: 100%;
+}
+
+.img-container img{
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.pays-name{
+    font-weight: bold;
+    font-size: 18px;
+    margin: 20px 10px;
+}
+
+.p-info{
+    font-size: 14px;
+    margin: 5px 10px;
+}
+
+.paysSolo-container span, .paysSolo-container-darkMode span{
+    font-size: 14px;
+    font-weight: bold;
+}
